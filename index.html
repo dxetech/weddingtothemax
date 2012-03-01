@@ -1,0 +1,340 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="" />
+  <meta name="title" content="" />
+  <meta name="description" content="" />
+<title>James and Janice's Wedding Site</title>
+
+<!-- ////////////////////////////////// -->
+<!-- //      Start Stylesheets       // -->
+<!-- ////////////////////////////////// -->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/colorbox.css" rel="stylesheet" type="text/css" media="screen" />
+<!--[if IE 6]>    
+  <link href="css/ie6.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/DD_belatedPNG.js"></script>
+  <script type="text/javascript"> 
+     DD_belatedPNG.fix('img');
+       DD_belatedPNG.fix('#container');
+       DD_belatedPNG.fix('#content');
+       DD_belatedPNG.fix('#logo');
+       DD_belatedPNG.fix('.divider-content');
+       DD_belatedPNG.fix('blockquote');
+                
+  </script>  
+<![endif]-->
+<style type='text/css' media='screen,projection'>
+<!--
+fieldset { border:0; margin:0; padding:0; }
+label { float:left; width:60px; margin-top:3px;}
+-->
+</style> 
+
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.colorbox.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){        
+    $("a[rel='gallery']").colorbox({transition:"fade"});        
+  });
+</script>
+<script src="js/jquery.cycle.all.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function() {
+    $('#content-left').cycle({
+        fx:     'blindX', // You can choose effect do you like, for reference : http://www.malsup.com/jquery/cycle/browser.html
+        speed:  'slow',
+        timeout: 0,
+        pager:  '#nav',
+        pagerAnchorBuilder: function(idx, slide) {
+            // return sel string for existing anchor
+            return '#nav li:eq(' + (idx) + ') a';
+        }
+    });
+  $('#gallery-page').cycle({
+        fx:     'fade', // You can choose effect do you like, for reference : http://www.malsup.com/jquery/cycle/browser.html
+        speed:  'slow',
+        timeout: 0,
+        pager:  '#gallery-nav',
+        pagerAnchorBuilder: function(idx, slide) {
+            // return sel string for existing anchor
+            return '#gallery-nav li:eq(' + (idx) + ') a';
+        }
+    });
+});
+</script>
+<script type="text/javascript" src="js/functionAddEvent.js"></script>
+<script type="text/javascript" src="js/contact.js"></script>
+<script type="text/javascript" src="js/xmlHttp.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/DistrictThin_400.font.js"></script>
+<script type="text/javascript">
+            Cufon.replace('h1') ('h2') ('h3') ('h4') ('h5') ('#nav li a') ('#logo');
+</script>  
+<!-- Google Analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27893245-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- END Google Analytics -->
+</head>
+<body>  
+    <div id="container">
+    <div id="content">
+            <div id="content-left">
+                        
+                <div class="maincontent-front"><!-- HOME PAGE -->
+                  <div class="bg-front">
+                      <div class="front-title">
+                        <h2>6.9.12</h2>
+                        <p>Janice and James will be married on June 9, 2012. We welcome you to our website where you can find all of the details for our special day.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="maincontent"><!-- ABOUT US PAGE -->
+                  <div class="bg-inner">
+                      <div class="inner-title">
+                        <h1>ABOUT US</h1>
+                        <p>Janice and James met in college at Cornell University in 2008. They have lived and adventured together from New York to California, and now reside near their families in New Jersey</p>
+                        <img src="images/groom.jpg" alt="" class="imgleft" />
+                        <h3>James Maxwell</h3>
+                        <p>James is an engineer by trade but an explorer at heart. No matter where he travels, he always feels at home when he is with Janice and considers himself blessed to be with such an incredible woman.</p>
+                        <img src="images/bride.jpg" alt="" class="imgleft" />
+                        <h3>Janice Perlstein</h3>
+                        <p>Janice loves her family, fiance, and a nice glass of wine. One of her dream is to travel to the wine regions of Europe with James, where they can share both culture and love.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="maincontent"><!-- OUR WEDDING PAGE -->
+                  <div class="bg-inner">
+                      <div class="inner-title">
+                        <h1>CEREMONY</h1>
+                        <div class="ceremony">
+                        <h3>Wedding Ceremony</h3>
+                        <p>Saturday, June 9 2012<br /> 
+                        3.00 PM until 4.00 PM<br />
+                        Minks Pond Club, Mink Pond Road<br />
+                        Bushkill, PA 18324<br />
+                        <a href="http://www.minkpondclub.com/" target="_blank">Website</a>
+                        </p>
+                        </div>
+                        <span class="divider-content"></span>
+                        <h3>Transportation Details</h3>
+                        <p>Shuttle service will transport wedding guests from two to three hotels in the area to the ceremony site. We ask that you utilize this shuttle service and anyone that requires a car check with us in advance as there is limited parking at Mink Pond</p>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="maincontent"><!-- OUR WEDDING PAGE -->
+                  <div class="bg-inner">
+                      <div class="inner-title">
+                        <h1>RECEPTION</h1>
+                        <div class="ceremony">
+                        <h3>Wedding Reception</h3>
+                        <p>Saturday, June 9 2012<br /> 
+                        Cocktail Hour: 5.00 PM until 6.00 PM<br />
+                        Reception: 6.00 PM until 10.00 PM<br />
+                        Shawnee Inn, One River Road<br />
+                        Shawnee, PA 18356<br />
+                        <a href="http://www.shawneeinn.com/" target="_blank">Website</a>
+                        </p>
+                        </div>
+                        <span class="divider-content"></span>
+                        <h3>Reception Site Details</h3>
+                        <p>Due to the limited amount of rooms at the Shawnee Inn, guests that would like to stay at the inn will have to book rooms on their own. However, do say you are with the Maxwell/Perlstein wedding when you book so that we can include you in the other perks.</p>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="maincontent"><!-- OUR WEDDING PAGE -->
+                  <div class="bg-inner">
+                      <div class="inner-title">
+                        <h1>ACCOMODATIONS</h1>
+                        <div class="ceremony">
+                        <h3>Shawnee Inn</h3>
+                        <p>
+                        <a href="http://www.shawneeinn.com/" target="_blank">Website</a><br />
+                        Unfortunately, due to a Shawnees size, we do not have a block for guests. However, we encourage you to book a room here for the date on your own.
+                        </p>
+                        </div>
+                        <span class="divider-content"></span>
+                        <h3>Accomodations Details</h3>
+                        <p>At this time we are looking into other hotel accomodations for our guests</p>
+                      </div>
+                  </div>
+                </div>
+                
+                
+                <div class="maincontent"><!-- GALLERY PAGE -->
+                  <div class="bg-inner">
+                      <div class="inner-title">
+                        <h1>GALLERY</h1>
+                          <div id="gallery-page">
+                                <div class="page"><!-- Page 1 -->
+                                    <div class="photo-gallery">
+                                    <a href="images/gallery-big/big-1.jpg" rel="gallery" title="James and Janice">
+                                    <img src="images/gallery-thumb/thumb-1.jpg" alt="" class="photo-gallery-img" /></a>
+                                    </div>
+                                    <div class="photo-gallery">
+                                    <a href="images/gallery-big/big-2.jpg" rel="gallery" title="James and Janice">
+                                    <img src="images/gallery-thumb/thumb-2.jpg" alt="" class="photo-gallery-img" /></a>
+                                    </div>
+                                    <div class="photo-gallery">
+                                    <a href="images/gallery-big/big-3.jpg" rel="gallery" title="James and Janice">
+                                    <img src="images/gallery-thumb/thumb-3.jpg" alt="" class="photo-gallery-img" /></a>
+                                    </div>
+                                    <div class="photo-gallery-last">
+                                    <a href="images/gallery-big/big-4.jpg" rel="gallery" title="James and Janice">
+                                    <img src="images/gallery-thumb/thumb-4.jpg" alt="" class="photo-gallery-img" /></a>
+                                    </div>
+                                    
+                                    <div class="photo-gallery">
+                                    <a href="images/gallery-big/big-5.jpg" rel="gallery" title="James and Janice">
+                                    <img src="images/gallery-thumb/thumb-5.jpg" alt="" class="photo-gallery-img" /></a>
+                                    </div>
+                                    <div class="photo-gallery">
+                                    <a href="images/gallery-big/big-6.jpg" rel="gallery" title="James and Janice">
+                                    <img src="images/gallery-thumb/thumb-6.jpg" alt="" class="photo-gallery-img" /></a>
+                                    </div>
+                                    <div class="photo-gallery">
+                                    <a href="images/gallery-big/big-7.jpg" rel="gallery" title="James and Janice">
+                                    <img src="images/gallery-thumb/thumb-7.jpg" alt="" class="photo-gallery-img" /></a>
+                                    </div>
+                                    <div class="photo-gallery-last">
+                                    <a href="images/gallery-big/big-8.jpg" rel="gallery" title="James and Janice">
+                                    <img src="images/gallery-thumb/thumb-8.jpg" alt="" class="photo-gallery-img" /></a>
+                                    </div>
+                                    
+                                    <div class="photo-gallery">
+                                    <a href="images/gallery-big/big-9.jpg" rel="gallery" title="James and Janice">
+                                    <img src="images/gallery-thumb/thumb-9.jpg" alt="" class="photo-gallery-img" /></a>
+                                    </div>
+                                    <div class="photo-gallery">
+                                    <a href="images/gallery-big/big-10.jpg" rel="gallery" title="James and Janice">
+                                    <img src="images/gallery-thumb/thumb-10.jpg" alt="" class="photo-gallery-img" /></a>
+                                    </div>
+                                    <div class="photo-gallery">
+                                    <a href="images/gallery-big/big-11.jpg" rel="gallery" title="James and Janice">
+                                    <img src="images/gallery-thumb/thumb-11.jpg" alt="" class="photo-gallery-img" /></a>
+                                    </div>
+                                    <div class="photo-gallery-last">
+                                    <a href="images/gallery-big/big-12.jpg" rel="gallery" title="James and Janice">
+                                    <img src="images/gallery-thumb/thumb-12.jpg" alt="" class="photo-gallery-img" /></a>
+                                    </div>
+                                </div>
+                                <div class="page"><!-- Page 2 -->
+                                    <div class="photo-gallery">
+                                    <a href="images/gallery-big/big-13.jpg" rel="gallery" title="James and Janice">
+                                    <img src="images/gallery-thumb/thumb-13.jpg" alt="" class="photo-gallery-img" /></a>
+                                    </div>
+                                    <div class="photo-gallery">
+                                    <a href="images/gallery-big/big-14.jpg" rel="gallery" title="James and Janice">
+                                    <img src="images/gallery-thumb/thumb-14.jpg" alt="" class="photo-gallery-img" /></a>
+                                    </div>
+                                    <div class="photo-gallery">
+                                    <a href="images/gallery-big/big-15.jpg" rel="gallery" title="James and Janice">
+                                    <img src="images/gallery-thumb/thumb-15.jpg" alt="" class="photo-gallery-img" /></a>
+                                    </div>
+                                    <div class="photo-gallery-last">
+                                    <a href="images/gallery-big/big-16.jpg" rel="gallery" title="James and Janice">
+                                    <img src="images/gallery-thumb/thumb-16.jpg" alt="" class="photo-gallery-img" /></a>
+                                    </div>
+                                    
+                                    <div class="photo-gallery">
+                                    <a href="images/gallery-big/big-27.jpg" rel="gallery" title="James and Janice">
+                                    <img src="images/gallery-thumb/thumb-27.jpg" alt="" class="photo-gallery-img" /></a>
+                                    </div>
+                                    <div class="photo-gallery">
+                                    <a href="images/gallery-big/big-18.jpg" rel="gallery" title="James and Janice">
+                                    <img src="images/gallery-thumb/thumb-18.jpg" alt="" class="photo-gallery-img" /></a>
+                                    </div>
+                                    <div class="photo-gallery">
+                                    <a href="images/gallery-big/big-19.jpg" rel="gallery" title="James and Janice">
+                                    <img src="images/gallery-thumb/thumb-19.jpg" alt="" class="photo-gallery-img" /></a>
+                                    </div>
+                                    <div class="photo-gallery-last">
+                                    <a href="images/gallery-big/big-20.jpg" rel="gallery" title="James and Janice">
+                                    <img src="images/gallery-thumb/thumb-20.jpg" alt="" class="photo-gallery-img" /></a>
+                                    </div>
+                                    
+                                    <div class="photo-gallery">
+                                    <a href="images/gallery-big/big-21.jpg" rel="gallery" title="James and Janice">
+                                    <img src="images/gallery-thumb/thumb-21.jpg" alt="" class="photo-gallery-img" /></a>
+                                    </div>
+                                    <div class="photo-gallery">
+                                    <a href="images/gallery-big/big-22.jpg" rel="gallery" title="James and Janice">
+                                    <img src="images/gallery-thumb/thumb-22.jpg" alt="" class="photo-gallery-img" /></a>
+                                    </div>
+                                    <div class="photo-gallery">
+                                    <a href="images/gallery-big/big-29.jpg" rel="gallery" title="James and Janice">
+                                    <img src="images/gallery-thumb/thumb-29.jpg" alt="" class="photo-gallery-img" /></a>
+                                    </div>
+                                    <div class="photo-gallery-last">
+                                    <a href="images/gallery-big/big-24.jpg" rel="gallery" title="James and Janice">
+                                    <img src="images/gallery-thumb/thumb-24.jpg" alt="" class="photo-gallery-img" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul id="gallery-nav">
+                                <li><a href="#">Prev</a></li>
+                                <li><a href="#">Next</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="maincontent"><!-- CONTACT US PAGE -->
+                  <div class="bg-inner">
+                      <div class="inner-title">
+                        <h1>CONTACT US</h1>
+                        <h3>Our Contact Information</h3>
+                        <p>We would love to hear from you! Feel free to email us about the wedding or anything else. You will find all of our information below.</p>
+                        <p><b>James Maxwell</b> <a href="mailto:james@weddingtothemax.com">james@weddingtothemax.com</a></p>
+                        <p><b>Janice Perlstein</b> <a href="mailto:janice@weddingtothemax.com">janice@weddingtothemax.com</a></p>
+                        <h3>Send a Message</h3>
+                        <a href="http://jamestothemax.wufoo.com/forms/send-janice-and-james-a-message/" target="_blank">Send us a message</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="content-right">
+              <div id="logo">
+                James &amp; Janice<!-- YOUR NAME BOTH -->
+                </div>
+                <div id="mainmenu">
+                  <ul id="nav"><!-- BEGIN MENU -->
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Ceremony</a></li>
+                      <li><a href="#">Reception</a></li>
+                      <li><a href="#">Accomodations</a></li>
+                      <li><a href="#">Gallery</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                    </ul>
+        </div>
+                <div id="footer"><!-- BEGIN FOOTER -->
+                  James and Janice's Wedding Site
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
